@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+    <form>
+        <label for="title">Title</label><br/>
+        <input type="radio" id="mr" name="title" value="mr">
+        <label for="mr">Mr.</label>
+        <input type="radio" id="mrs" name="title" value="mrs">
+        <label for="mrs">Mrs.</label>
+        <input type="radio" id="ms" name="title" value="ms">
+        <label for="ms">Ms.</label>
+        <br/><br/>
+
+        <label for="fname">First Name</label><br/>
+        <input type="text" id="fname" name="fname">
+        <br/><br/>
+
+        <label for="lname">Last Name</label><br/>
+        <input type="text" id="lname" name="lname">
+        <br/><br/>
+
+        <label for="username">Username</label><br/>
+        <input type="text" id="username" name="username">
+        <br/><br/>
+
+        <label for="password">Password</label><br/>
+        <input type="text" id="password" name="password">
+        <br/><br/>
+
+        <input type="checkbox" id="agree" name="agree" value="agree">
+        <label for="agree">I agree to terms and conditions</label>
+        <br/><br/>
+
+        <input type="submit" value="submit" onclick="submitClick()">
+
+    </form>
+
+    <script>
+        function submitClick(){
+            alert("Registration Completed!");
+        }
+    </script>
+</body>
+</html>
